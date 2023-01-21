@@ -24,6 +24,7 @@ class _BmaMainState extends State<BmiMain>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
+      resizeToAvoidBottomInset : false,
       appBar: AppBar(title:Text("비만도계산기")),
       body: Container(
         padding: EdgeInsets.all(16.0),

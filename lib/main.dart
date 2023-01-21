@@ -1,12 +1,16 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_basic/Page1/page1.dart';
 import 'package:flutter_basic/page2.dart';
 import 'package:flutter_basic/page3.dart';
 import 'package:flutter_basic/page4.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 //앱 시작 부분
 /*void main() => runApp(MyApp());*/ //같은 코드임
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
