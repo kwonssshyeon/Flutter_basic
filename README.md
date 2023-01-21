@@ -1,6 +1,6 @@
 # flutter_basic
 
-A new Flutter project.
+bottomNavigationBar 다른방법으로 수정
 
 ## Getting Started
 
