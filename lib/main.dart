@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_basic/Page1/page1.dart';
 import 'package:flutter_basic/page2.dart';
 import 'package:flutter_basic/page3.dart';
-import 'package:flutter_basic/page4.dart';
+import 'package:flutter_basic/Page4/page4.dart';
 import 'package:firebase_core/firebase_core.dart';
+
 
 //앱 시작 부분
 /*void main() => runApp(MyApp());*/ //같은 코드임
