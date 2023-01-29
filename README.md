@@ -1,6 +1,8 @@
 # flutter_basic
 
 bottomNavigationBar 다른방법으로 수정
+web으로 실행하면 오류나는거 수정
+~~로그인 오류나는거 수정~~
 
 ## Getting Started
 

@@ -31,7 +31,7 @@ dependencies {
 }
 
 android {
-    compileSdkVersion flutter.compileSdkVersion
+    compileSdkVersion // 원래 flutter.compileSdkVersion -->오류나서 바꿈
     ndkVersion flutter.ndkVersion
 
     compileOptions {

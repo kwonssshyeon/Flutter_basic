@@ -1,7 +1,8 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_basic/Page4/chatting/chat/message.dart';
 
 class ChatPage extends StatefulWidget{
   const ChatPage({Key? key}):super(key: key);
@@ -43,7 +44,7 @@ class _ChatPageState extends State<ChatPage>{
           IconButton(
             onPressed: (){
               _authentication.signOut();
-              Navigator.pop(context);
+
             },
             icon: Icon(Icons.exit_to_app_sharp,
               color: Colors.white,
@@ -51,9 +52,14 @@ class _ChatPageState extends State<ChatPage>{
           ),
         ],
       ),
-      body: Center(
-        child: Text("채팅화면"),
-      ),
+      body: Container(
+        child: Column(
+          children: [
+            Expanded(child: Messages(),
+            ),
+          ],
+        ),
+      )
     );
   }
 
